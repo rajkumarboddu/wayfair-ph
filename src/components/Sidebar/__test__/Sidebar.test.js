@@ -85,4 +85,3 @@ describe('Sidebar renders with out nav (data fetch failed)', () => {
         expect(screen.getByTestId('fetch-failed')).toBeInTheDocument();
     });
 });
-
