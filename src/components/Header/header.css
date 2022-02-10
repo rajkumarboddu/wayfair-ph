@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    border-bottom: 1px solid var(--light-grey);
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo > img {
+    width: 8rem;
+    padding-right: 0.25px;
+}
+
+.logo .caption {
+    color: var(--light-black);
+    font-size: 0.9rem;
+    padding-top: 0.25rem;
+}
