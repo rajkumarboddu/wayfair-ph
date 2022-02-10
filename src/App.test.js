@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import App from './App';
 
+afterAll(cleanup);
+
 test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Wayfair/i);
-  expect(linkElement).toBeInTheDocument();
+  const screen = render(<App />);
+  expect(screen).not.toBeNull();
 });
